@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Twitter, Phone, Mail, MapPin } from "lucide-react";
+import { Facebook, Instagram, MessageCircle, Phone, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -50,6 +50,7 @@ const Footer = () => {
               >
                 Reviews
               </a>
+              
               <a 
                 href="#contact" 
                 className="text-muted-foreground text-sm hover:text-foreground transition-colors"
@@ -57,9 +58,10 @@ const Footer = () => {
               >
                 Contact
               </a>
+              
             </nav>
           </div>
-
+          
           {/* Contact & Social */}
           <div>
             <h3 className="font-display text-sm tracking-wider text-foreground mb-4 uppercase">Connect With Us</h3>
@@ -80,25 +82,22 @@ const Footer = () => {
                 <Mail className="w-4 h-4" />
                 <span>info@projectwheels.com</span>
               </a>
-              <div className="flex items-center gap-2 text-muted-foreground text-sm">
+              <a
+                href="https://maps.google.com/?q=A-201,%20near%20Gate%20No.%204,%20Sector-69,%20Sector%2069,%20Noida,%20Uttar%20Pradesh%20201309"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-muted-foreground text-sm hover:text-foreground transition-colors"
+                aria-label="Open Project Wheels on Google Maps"
+              >
                 <MapPin className="w-4 h-4" />
-                <span>Delhi NCR, India</span>
-              </div>
+                <span>A-201, near Gate No. 4, Sector 69, Noida</span>
+              </a>
             </div>
             
             {/* Social Media Links */}
             <div className="flex gap-3">
               <a
-                href="https://facebook.com/projectwheels"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
-                aria-label="Visit our Facebook page"
-              >
-                <Facebook className="w-4 h-4 text-foreground" />
-              </a>
-              <a
-                href="https://instagram.com/projectwheels"
+                href="https://www.instagram.com/projectwheelsnoida/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
@@ -107,13 +106,22 @@ const Footer = () => {
                 <Instagram className="w-4 h-4 text-foreground" />
               </a>
               <a
-                href="https://twitter.com/projectwheels"
+                href="https://api.whatsapp.com/message/OZ2LZO4JEWYKC1?autoload=1&app_absent=0&utm_source=ig"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
-                aria-label="Visit our Twitter profile"
+                aria-label="Chat with us on WhatsApp"
               >
-                <Twitter className="w-4 h-4 text-foreground" />
+                <MessageCircle className="w-4 h-4 text-foreground" />
+              </a>
+              <a
+                href="https://www.facebook.com/projectwheelsindia/?ref=NONE_xav_ig_profile_page_web"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
+                aria-label="Visit our Facebook page"
+              >
+                <Facebook className="w-4 h-4 text-foreground" />
               </a>
             </div>
           </div>
@@ -139,6 +147,8 @@ const Footer = () => {
             </a>
           </div>
         </div>
+
+        
       </div>
     </footer>
   );

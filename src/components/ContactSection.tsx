@@ -59,6 +59,34 @@ const ContactSection = () => {
           ))}
         </div>
 
+        {/* Live Map */}
+        <div className="mt-12 text-left">
+          <div className="flex items-center justify-between gap-4 mb-4">
+            <h3 className="font-display text-sm tracking-wider text-foreground uppercase">Find Us</h3>
+            <a
+              href="https://maps.google.com/?q=A-201,%20near%20Gate%20No.%204,%20Sector-69,%20Sector%2069,%20Noida,%20Uttar%20Pradesh%20201309"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+              aria-label="Open Project Wheels on Google Maps"
+            >
+              Open in Google Maps
+            </a>
+          </div>
+          <div className="w-full overflow-hidden rounded-md border border-border/60 bg-background/40">
+            <iframe
+              title="Project Wheels location on Google Maps"
+              src="https://www.google.com/maps?q=A-201,%20near%20Gate%20No.%204,%20Sector-69,%20Sector%2069,%20Noida,%20Uttar%20Pradesh%20201309&output=embed"
+              className="w-full h-72 md:h-80"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+          <p className="mt-3 text-sm text-muted-foreground">
+            A-201, near Gate No. 4, Sector 69, Noida, Uttar Pradesh 201309
+          </p>
+        </div>
+
         {/* CTA */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
